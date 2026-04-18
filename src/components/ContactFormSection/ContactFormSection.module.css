@@ -15,7 +15,6 @@
    position: relative;
    /* Опорная точка для абсолютных картинок справа */
    min-height: 970px;
-   /* Берем из твоего CSS дампа высоту белой плашки */
 }
 
 /* Белая карточка формы */
@@ -27,7 +26,6 @@
    padding: 70px 70px 90px 70px;
    position: relative;
    z-index: 5;
-   /* Форма находится на слое 5 */
 }
 
 .title {
@@ -42,7 +40,6 @@
 
 .highlight {
    color: #A7CA44;
-   /* Салатовый цвет */
 }
 
 .subtitle {
@@ -119,22 +116,21 @@
 /* Картинки справа */
 .imageCol {
    position: absolute;
-   right: -100px;
-   /* Сдвинули ВЕСЬ блок правее */
+   right: 0;
+   /* Вернули к правому краю контейнера */
    top: 50%;
    transform: translateY(-50%);
-   width: 900px;
+   width: 800px;
    height: 1000px;
    pointer-events: none;
-   /* Чтобы картинки не мешали кликать по форме, если перекроют её */
    z-index: 10;
 }
 
 .envelopeImg {
    position: absolute;
-   right: -50px;
+   right: 5 px;
+   /* ИСПРАВЛЕНО: Сдвинули конверт ЛЕВЕЕ (было -50px) */
    top: -20px;
-   /* ПОДНЯЛИ НАВЕРХ: почти на уровне телефона */
    width: 804px;
    transform: rotate(7.18deg);
    z-index: 1;
@@ -142,8 +138,8 @@
 
 .phoneImg {
    position: absolute;
-   left: -20px;
-   /* ОТОДВИНУЛИ ПРАВЕЕ: телефон не перекрывает текст */
+   left: -50px;
+   /* Чуть подправили телефон относительно конверта */
    top: -50px;
    width: 471px;
    z-index: 2;

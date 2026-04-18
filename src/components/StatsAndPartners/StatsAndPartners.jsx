@@ -2,11 +2,11 @@ import React from 'react';
 import styles from './StatsAndPartners.module.css';
 
 // Ассеты для партнеров (согласно list_directory)
-import partner1 from '../../assets/image 1.png';
-import partner2 from '../../assets/image 2.png';
-import partner3 from '../../assets/image 3.png';
-import partner4 from '../../assets/image 4.png';
-import partner5 from '../../assets/sunl 1 (1).png'; // Предположим, это пятый логотип
+import partner1 from '../../assets/image1.png';
+import partner2 from '../../assets/image2.png';
+import partner3 from '../../assets/image3.png';
+import partner4 from '../../assets/image4.png';
+import partner5 from '../../assets/sunl.png'; // Предположим, это пятый логотип
 
 const StatsAndPartners = () => {
   const stats = [

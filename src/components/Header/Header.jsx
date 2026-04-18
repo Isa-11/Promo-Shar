@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
-import whatsap from '../../assets/Group 13.png';
-import telegram from '../../assets/Group 9.png';
+import whatsap from '../../assets/Group13.png';
+import telegram from '../../assets/Group9.png';
 const Header = () => {
   return (
     <header className={styles.header}>
