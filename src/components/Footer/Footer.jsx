@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-// Импорты для темного подвала
-import logoImg from '../../assets/Group 1.png'; 
+// Импорты для темного подвала (исправленные названия без пробелов)
+import logoImg from '../../assets/Group1.png'; 
 import phoneIcon from '../../assets/solar_phone-bold.png'; 
-import waIcon from '../../assets/Group 9.png'; 
-import tgIcon from '../../assets/Group 13.png'; 
+import waIcon from '../../assets/Group9.png'; 
+import tgIcon from '../../assets/Group13.png'; 
 
 const Footer = () => {
   return (

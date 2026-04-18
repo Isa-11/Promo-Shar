@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HeroSection.module.css';
 
-// Импорты картинок
+// Импорты картинок (исправленные названия)
 import heroImg from '../../assets/шарики331.jpg';
 import packageImg from '../../assets/first.png';
 import microBalloons from '../../assets/микро шарики 1.png';
@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
-
+        
         {/* Левая часть (Текст, карточки, кнопки) */}
         <div className={styles.leftCol}>
           <h1 className={styles.title}>
@@ -28,28 +28,28 @@ const HeroSection = () => {
               <div className={styles.cardImgWrapper}>
                 <img src={packageImg} alt="печать на пакетах" />
               </div>
-              <p className={styles.cardText}>печать на<br />пакетах</p>
+              <p className={styles.cardText}>печать на<br/>пакетах</p>
             </div>
             {/* Карточка 2 */}
             <div className={styles.serviceCard}>
               <div className={styles.cardImgWrapper}>
                 <img src={microBalloons} alt="печать на воздушных шарах" />
               </div>
-              <p className={styles.cardText}>печать на<br />воздушных шарах</p>
+              <p className={styles.cardText}>печать на<br/>воздушных шарах</p>
             </div>
             {/* Карточка 3 */}
             <div className={styles.serviceCard}>
               <div className={styles.cardImgWrapper}>
                 <img src={photozoneImg} alt="фотозоны и декор мероприятий" />
               </div>
-              <p className={styles.cardText}>фотозоны и декор<br />мероприятий</p>
+              <p className={styles.cardText}>фотозоны и декор<br/>мероприятий</p>
             </div>
             {/* Карточка 4 */}
             <div className={styles.serviceCard}>
               <div className={styles.cardImgWrapper}>
                 <img src={dogBalloon} alt="оформление воздушными шарами" />
               </div>
-              <p className={styles.cardText}>оформление<br />воздушными шарами</p>
+              <p className={styles.cardText}>оформление<br/>воздушными шарами</p>
             </div>
           </div>
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './StatsAndPartners.module.css';
 
-// Ассеты для партнеров (согласно list_directory)
-import partner1 from '../../assets/image1.png';
+// Ассеты для партнеров (исправленные названия)
+import partner1 from '../../assets/image1.png'; 
 import partner2 from '../../assets/image2.png';
 import partner3 from '../../assets/image3.png';
 import partner4 from '../../assets/image4.png';
-import partner5 from '../../assets/sunl.png'; // Предположим, это пятый логотип
+import partner5 from '../../assets/1.png'; 
 
 const StatsAndPartners = () => {
   const stats = [
@@ -20,7 +20,7 @@ const StatsAndPartners = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-
+        
         {/* Блок статистики (Белая плашка) */}
         <div className={styles.statsPlate}>
           {stats.map((stat, index) => (
@@ -45,8 +45,8 @@ const StatsAndPartners = () => {
           <img src={partner1} alt="Partner 1" className={styles.partnerLogo} />
           <img src={partner2} alt="Partner 2" className={styles.partnerLogo} />
           <img src={partner3} alt="Partner 3" className={styles.partnerLogo} />
-          <img src={partner5} alt="Partner 4" className={styles.partnerLogo} />
-          <img src={partner4} alt="Partner 5" className={styles.partnerLogo} />
+          <img src={partner4} alt="Partner 4" className={styles.partnerLogo} />
+          <img src={partner5} alt="Partner 5" className={styles.partnerLogo} />
         </div>
 
       </div>

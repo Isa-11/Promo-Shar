@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-// Ассеты для хедера
-import logoImg from '../../assets/Group 1.png';
+// Ассеты для хедера (исправленные названия без пробелов)
+import logoImg from '../../assets/Group1.png';
 import phoneIcon from '../../assets/solar_phone-bold.png';
-import tgIcon from '../../assets/Group 13.png';
-import waIcon from '../../assets/Group 9.png';
+import tgIcon from '../../assets/Group13.png';
+import waIcon from '../../assets/Group9.png';
 
 const Header = () => {
   return (
