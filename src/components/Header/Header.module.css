@@ -1,0 +1,128 @@
+.header {
+  width: 100%;
+  background: #FFFFFF;
+  height: 129px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  z-index: 100;
+  /* Чтобы всегда была над шарами */
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили Логотипа */
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoIcon {
+  width: 82px;
+  height: 82px;
+  background: linear-gradient(272.1deg, #E65B9D 43.32%, #A7CA44 51.13%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logoBalloon {
+  width: 57px;
+  height: 66px;
+  background: radial-gradient(71.96% 71.96% at 60.53% 32.57%, #FCFAFB 0%, #DBE4C8 100%);
+  border-radius: 50%;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #252525;
+}
+
+/* Стили Меню */
+.nav {
+  display: flex;
+  gap: 60px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #5B5B5B;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #A7CA44;
+}
+
+/* Стили Контактов */
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #252525;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.waBtn,
+.tgBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.waBtn {
+  background: #B8C63F;
+}
+
+.tgBtn {
+  background: #52B8D2;
+}
+
+.waBtn img,
+.tgBtn img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+  /* Делаем иконки белыми */
+}
+
+.waBtn:hover,
+.tgBtn:hover {
+  transform: scale(1.1);
+}

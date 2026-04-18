@@ -1,0 +1,192 @@
+.footerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- СЕКЦИЯ КАРТЫ --- */
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Высота карты */
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+}
+
+.contactCard {
+  position: absolute;
+  right: 15%; /* Сдвиг от правого края */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 50px 60px;
+  width: 480px;
+}
+
+.cardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #252525;
+  margin: 0 0 30px 0;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #5B5B5B;
+  line-height: 1.4;
+}
+
+.contactList svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+
+/* --- ТЕМНЫЙ ПОДВАЛ --- */
+.darkFooter {
+  background: #404040;
+  border-radius: 30px 30px 0px 0px; /* Закругление сверху */
+  padding: 40px 0 20px 0;
+  margin-top: -30px; /* Наползаем на карту, чтобы скруглить углы красиво */
+  position: relative;
+  z-index: 2;
+}
+
+.footerContainer {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Логотип */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoImgPlaceholder {
+  width: 82px;
+  height: 82px;
+  background: linear-gradient(272.1deg, #E65B9D 43.32%, #A7CA44 51.13%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImgPlaceholder img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+/* Навигация */
+.navMenu {
+  display: flex;
+  gap: 40px;
+}
+
+.navMenu a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.navMenu a:hover {
+  opacity: 0.8;
+}
+
+/* Контакты справа */
+.contactSection {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.phoneLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.phoneIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.socialCircle:hover {
+  transform: scale(1.1);
+}
+
+.socialCircle img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Копирайт */
+.copyright {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}

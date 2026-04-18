@@ -1,0 +1,81 @@
+.section {
+  width: 100%;
+  background-color: #FBFBFB;
+  padding: 40px 0 100px 0; /* Отступы сверху и снизу */
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px; /* Расстояние между белой плашкой и логотипами */
+}
+
+/* Белая плашка со статистикой */
+.statsPlate {
+  width: 100%;
+  max-width: 1791px;
+  height: 219px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-evenly; /* Равномерно распределяет элементы */
+  align-items: center;
+  padding: 0 40px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.statValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 78px;
+  color: #383838;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Расстояние между 4.9 и звездой */
+}
+
+/* Золотая звезда */
+.star {
+  color: #FFD23D;
+  font-size: 45px;
+  line-height: 1;
+  margin-top: -5px; /* Визуально выравниваем по центру цифры */
+}
+
+.statLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #383838;
+  margin-top: 5px;
+}
+
+/* Ряд с логотипами партнеров */
+.partnersRow {
+  width: 100%;
+  max-width: 1647px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partnerLogo {
+  max-height: 120px;
+  object-fit: contain;
+  filter: grayscale(0%); /* На случай, если захочешь сделать их серыми потом */
+}

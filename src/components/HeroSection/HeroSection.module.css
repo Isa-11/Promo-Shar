@@ -1,0 +1,200 @@
+.heroSection {
+  /* ИСПРАВЛЕНО: Фон теперь чисто белый, чтобы mix-blend-mode работал идеально */
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 80px 0;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  position: relative;
+}
+
+/* Левая колонка (Текст и карточки) */
+.leftCol {
+  flex: 0 0 58%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* Правая колонка (Контейнер для шаров) */
+.rightCol {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.heroImageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  /* Размер не трогаем, как ты и просил */
+  width: 120%;
+  max-width: 1100px;
+  height: auto;
+  object-fit: contain;
+
+  /* МАГИЯ ЗДЕСЬ: multiply удаляет белый фон у JPG картинок */
+  mix-blend-mode: multiply;
+
+  /* Если шарики стали слишком бледными, можно убрать opacity или поставить 1 */
+  opacity: 1;
+
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Анимация левитации */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 117px;
+  color: #252525;
+  margin: 0 0 10px 0;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 88px;
+  color: #A7CA44;
+  margin: 0 0 60px 0;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  height: 196px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.cardImgWrapper {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cardImgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cardText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #777777;
+  margin: 0;
+  text-align: center;
+}
+
+.buttonsGroup {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.primaryBtn {
+  width: 503px;
+  height: 106px;
+  background: linear-gradient(90deg, #EFFA66 0%, #B4C236 100%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(255, 243, 114, 0.4);
+  border-radius: 60px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #383838;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 25px rgba(180, 194, 54, 0.4), inset 0px 4px 4px rgba(255, 243, 114, 0.4);
+}
+
+.secondaryBtn {
+  width: 518px;
+  height: 109px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #383838;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+}
